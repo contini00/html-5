@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <!-- elementy liniowe -->
     <a href="">Link 1</a>
@@ -23,12 +25,12 @@
     <div>Domyślny znacznik blogowy</div>
     <ul>
         <ol>Teskt listy punktowe</ol>
-            <li>Tekst W</li>
-            <li>Tekst WW</li>
+        <li>Tekst W</li>
+        <li>Tekst WW</li>
         <ol>Tekst listy punktowe 2</ol>
     </ul>
     <!-- Odnośniki -->
-    <a href="https://google.com" >Strona startowa google</a>
+    <a href="https://google.com">Strona startowa google</a>
     <br></br>
     <a href="podstrony/kontakt.html" target="_blank">Kontakt</a>
     <br></br>
@@ -61,5 +63,66 @@
             <td>8</td>
         </tr>
     </tfoot>
+
+    <!-- Formularze -->
+    <br>
+    <br>
+    <form action="" method="post">
+        <label for="name"> Imię użytkownika
+            <input type="text" name="name" id="user-name" tabindex="3">
+        </label>
+        <br>
+        <br>
+            <span>Twój a email :</span> <input type="email" placeholder="Wpisz adres email" disabled>
+        <br>
+        <br>
+        <label for="quantity"> Liczba czegoś
+            <input type="number" id="quantity"
+            name="quantity" value="2" range="10">
+        </label>
+        <br>   
+        <br>
+        <label for="agreement"> Wyrażam zgodę
+                <input type="checkbox" name="agreement">
+        </label>
+        <br>   
+        <br>
+        <label for="agreement"> Mam Kogoś gdzieś
+                <input type="checkbox" name="agreement">
+        </label>
+        <br>
+        <br>
+        <label for="gender">Podaj swoją płeć
+            <br>
+            <br>Mężczyzna
+            <input type="radio" name="gender">
+            <br>
+            <br>Kobieta
+            <input type="radio" name="gender">
+        </label>
+        <label for="gender">Podaj swoją płeć
+                <br>
+                <br>Mężczyzna
+                <input type="radio" name="gender">
+                <br>
+                <br>Kobieta
+                <input type="radio" name="gender">
+            </label>
+            <br>
+            <br>
+        <select name="cities">
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+            <option value="Kraków">Kraków</option>
+        </select>
+        <br>
+        <br>
+        <textarea maxlength="10" placeholder="Napisz swpją wiadomość" name="message"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="wyslij formularz">
+    </form>
+    <iframe width="700" height="394" src="https://www.youtube.com/watch?v=3jt6q65PvPU" >#document</iframe>
 </body>
+
 </html>
